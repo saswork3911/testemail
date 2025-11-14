@@ -41,7 +41,7 @@ app.post('/send-email', async (req, res) => {
 
 // Cron job - daily at 9 AM
 cron.schedule('0 9 * * *', () => {
-  sendEmail('recipient@example.com', 'Daily Report', 'Your daily automated email');
+  sendEmail('trymegpt@gmail.com', 'Daily Report', 'Your daily automated email');
 });
 
 app.listen(process.env.PORT, () => {
